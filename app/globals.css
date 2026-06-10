@@ -1,26 +1,142 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ─────────────────────────────────────────
+   DESIGN SYSTEM — Zakât Calculator
+   Référence : Design System validé
+   ───────────────────────────────────────── */
+
+@theme {
+  /* ── Neutrals (Zinc — légèrement chauds) ── */
+  --color-neutral-0:   #ffffff;
+  --color-neutral-50:  #fafafa;
+  --color-neutral-100: #f4f4f5;
+  --color-neutral-200: #e4e4e7;
+  --color-neutral-300: #d1d1d6;
+  --color-neutral-400: #a1a1aa;
+  --color-neutral-500: #71717a;
+  --color-neutral-600: #52525b;
+  --color-neutral-700: #3f3f46;
+  --color-neutral-800: #27272a;
+  --color-neutral-900: #18181b;
+  --color-neutral-950: #09090b;
+
+  /* ── Brand — Emerald 600 (#059669) ── */
+  --color-brand-50:  #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-200: #a7f3d0;
+  --color-brand-300: #6ee7b7;
+  --color-brand-400: #34d399;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-700: #047857;
+  --color-brand-800: #065f46;
+  --color-brand-900: #064e3b;
+
+  /* ── Sémantiques ── */
+  --color-success-50:  #f0fdf4;
+  --color-success-500: #22c55e;
+  --color-success-700: #15803d;
+
+  --color-warning-50:  #fffbeb;
+  --color-warning-400: #fbbf24;
+  --color-warning-700: #b45309;
+
+  --color-error-50:  #fff1f2;
+  --color-error-500: #ef4444;
+  --color-error-700: #b91c1c;
+
+  --color-info-50:  #eff6ff;
+  --color-info-500: #3b82f6;
+  --color-info-700: #1d4ed8;
+
+  /* ── Spéciales ── */
+  --color-gold-400:   #fbbf24;
+  --color-gold-600:   #d97706;
+  --color-result-bg:  #09090b;
+
+  /* ── Typographie ── */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", monospace;
+
+  /* ── Espacements (base 8px) ── */
+  --spacing-1:  4px;
+  --spacing-2:  8px;
+  --spacing-3:  12px;
+  --spacing-4:  16px;
+  --spacing-5:  20px;
+  --spacing-6:  24px;
+  --spacing-8:  32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+
+  /* ── Rayons ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* ── Ombres ── */
+  --shadow-xs:    0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-sm:    0 1px 3px rgb(0 0 0 / 0.08), 0 1px 2px rgb(0 0 0 / 0.04);
+  --shadow-md:    0 4px 6px rgb(0 0 0 / 0.05), 0 2px 4px rgb(0 0 0 / 0.04);
+  --shadow-lg:    0 10px 15px rgb(0 0 0 / 0.06), 0 4px 6px rgb(0 0 0 / 0.03);
+  --shadow-brand: 0 0 0 3px rgb(5 150 105 / 0.15);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ─── Transitions d'étapes ─── */
+@keyframes step-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.step-enter {
+  animation: step-enter 0.22s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ─── Reset & base ─── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  body {
+    background-color: var(--color-neutral-0);
+    color: var(--color-neutral-900);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Focus visible global — accessibilité */
+  :focus-visible {
+    outline: 2px solid var(--color-brand-600);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Chiffres tabulaires sur tous les montants */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Sélection de texte brand */
+  ::selection {
+    background-color: var(--color-brand-100);
+    color: var(--color-brand-900);
+  }
 }

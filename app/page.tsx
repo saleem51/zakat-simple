@@ -1,65 +1,106 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Calculateur de Zakāt al-Māl — Gratuit et confidentiel",
+  description:
+    "Calculez votre Zakāt annuelle en quelques minutes. Outil gratuit, 100 % confidentiel, basé sur les avis des savants de Ahl as-Sunnah wa-l-Jamā'ah.",
+  openGraph: {
+    title: "Calculateur de Zakāt al-Māl",
+    description:
+      "Calculez votre Zakāt annuelle gratuitement et en toute confidentialité.",
+  },
+};
+
+const FEATURES = [
+  {
+    title: "100 % confidentiel",
+    desc: "Vos données financières ne quittent jamais votre appareil. Aucun serveur, aucune base de données.",
+  },
+  {
+    title: "Basé sur des sources reconnues",
+    desc: "Calcul fondé sur les avis des savants de Ahl as-Sunnah. Les divergences sont signalées clairement.",
+  },
+  {
+    title: "Simple ou complet",
+    desc: "Interface adaptée à votre niveau. Du débutant à l'utilisateur avancé avec des actifs complexes.",
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <SiteHeader />
+      <main className="flex flex-1 flex-col">
+        {/* Hero */}
+        <section className="mx-auto w-full max-w-2xl px-4 py-16 sm:py-24 text-center space-y-6">
+          <p className="text-[13px] font-medium uppercase tracking-widest text-brand-600">
+            Zakāt al-Māl
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          <h1 className="text-[36px] sm:text-[48px] font-bold text-neutral-900 leading-tight">
+            Calculez votre Zakāt
+            <br />
+            <span className="text-brand-600">en quelques minutes</span>
+          </h1>
+          <p className="text-[17px] text-neutral-600 leading-relaxed max-w-lg mx-auto">
+            Un outil gratuit, confidentiel et rigoureux pour calculer votre
+            Zakāt annuelle sur la richesse.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Button asChild>
+              <Link href="/calculateur">Commencer le calcul</Link>
+            </Button>
+            <Button asChild variant="secondary">
+              <Link href="/comment-calculer-sa-zakat">
+                Comment ça fonctionne ?
+              </Link>
+            </Button>
+          </div>
+
+          <p className="text-[13px] text-neutral-400">
+            Aucune inscription · Aucun cookie · Aucune donnée collectée
+          </p>
+        </section>
+
+        <Separator />
+
+        {/* Features */}
+        <section className="mx-auto w-full max-w-4xl px-4 py-12 sm:py-16">
+          <div className="grid gap-8 sm:grid-cols-3">
+            {FEATURES.map((f) => (
+              <div key={f.title} className="space-y-2">
+                <h2 className="text-[16px] font-semibold text-neutral-900">
+                  {f.title}
+                </h2>
+                <p className="text-[14px] text-neutral-500 leading-relaxed">
+                  {f.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <Separator />
+
+        {/* Disclaimer bas de page */}
+        <section className="mx-auto w-full max-w-2xl px-4 py-12 text-center space-y-4">
+          <p className="text-[14px] text-neutral-500 leading-relaxed">
+            Ce calculateur ne prétend pas rendre une fatwa. Il est conçu comme
+            un outil d&apos;aide au calcul basé sur les avis reconnus des
+            savants de Ahl as-Sunnah wa-l-Jamā&apos;ah. En cas de doute,
+            consultez un érudit qualifié.
+          </p>
+          <Button asChild>
+            <Link href="/calculateur">Calculer ma Zakāt</Link>
+          </Button>
+        </section>
       </main>
-    </div>
+      <SiteFooter />
+    </>
   );
 }
