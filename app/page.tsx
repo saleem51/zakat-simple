@@ -87,7 +87,7 @@ export default function HomePage() {
       {
         "@type": "WebSite",
         name: "Calculateur de Zakāt al-Māl",
-        url: "https://zakat-calculator.fr",
+        url: "https://zakatfacile.fr",
         description:
           "Calculateur de Zakāt al-Māl gratuit et confidentiel, fondé sur les avis des savants de Ahl as-Sunnah wa-l-Jamā'ah.",
         inLanguage: "fr-FR",

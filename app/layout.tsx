@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   description:
     "Calculez votre Zakât al-Māl en quelques minutes. Outil gratuit, confidentiel, basé sur les avis des savants de Ahl as-Sunnah.",
-  metadataBase: new URL("https://zakat-calculator.fr"),
+  metadataBase: new URL("https://zakatfacile.fr"),
   openGraph: {
     type: "website",
     locale: "fr_FR",

@@ -73,7 +73,7 @@ export default function NisabPage() {
           "Niṣāb : définition, montant actuel (or et argent) et calcul de la Zakāt",
         description:
           "Tout savoir sur le niṣāb : définition islamique, montant en or (85 g) et en argent (595 g), valeur du jour, divergences entre savants.",
-        url: "https://zakat-calculator.fr/nisab",
+        url: "https://zakatfacile.fr/nisab",
         inLanguage: "fr-FR",
         author: {
           "@type": "Organization",
