@@ -19,7 +19,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    siteName: "Calculateur de Zakât",
+    siteName: "zakatfacile.fr",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
   robots: {
     index: true,

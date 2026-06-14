@@ -8,6 +8,16 @@ export const metadata: Metadata = {
   title: "Sources et méthodologie religieuse",
   description:
     "Méthodologie religieuse du calculateur de Zakāt : sources du Coran, de la Sunnah authentique, et des savants de Ahl as-Sunnah wa-l-Jamā'ah.",
+  alternates: {
+    canonical: "/sources",
+  },
+  openGraph: {
+    title: "Sources et méthodologie religieuse — Calculateur de Zakāt",
+    description:
+      "Références coraniques, hadiths et avis des savants de Ahl as-Sunnah qui fondent le calcul de la Zakāt al-Māl.",
+    type: "article",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
+  },
 };
 
 export default function SourcesPage() {

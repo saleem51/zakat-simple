@@ -5,7 +5,9 @@ export const metadata: Metadata = {
   title: "Calculer ma Zakāt al-Māl",
   description:
     "Calculez votre Zakāt annuelle sur la richesse. Outil confidentiel, calcul 100 % sur votre appareil.",
-  robots: { index: false, follow: false },
+  alternates: {
+    canonical: "/calculateur",
+  },
 };
 
 export default function CalculateurPage() {

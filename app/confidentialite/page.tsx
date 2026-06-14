@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Politique de confidentialité",
   description:
     "Politique de confidentialité du calculateur de Zakāt. Aucune donnée personnelle collectée, aucun cookie, calcul 100 % local.",
+  alternates: {
+    canonical: "/confidentialite",
+  },
 };
 
 export default function ConfidentialitePage() {

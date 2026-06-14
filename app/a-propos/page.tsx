@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "À propos",
   description:
     "Présentation du calculateur de Zakāt al-Māl : objectifs, périmètre, limites et avertissements.",
+  alternates: {
+    canonical: "/a-propos",
+  },
+  openGraph: {
+    title: "À propos — Calculateur de Zakāt al-Māl",
+    description:
+      "Présentation du calculateur de Zakāt al-Māl : objectifs, périmètre, limites et avertissements.",
+    type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
+  },
 };
 
 export default function AProposPage() {

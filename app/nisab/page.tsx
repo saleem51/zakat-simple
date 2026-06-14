@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     description:
       "Définition, niṣāb en or, niṣāb en argent, valeurs actuelles, divergences entre écoles — la référence francophone sur le niṣāb de la Zakāt.",
     type: "article",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
   },
 };
 

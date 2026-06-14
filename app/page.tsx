@@ -91,6 +91,7 @@ export default function HomePage() {
         description:
           "Calculateur de Zakāt al-Māl gratuit et confidentiel, fondé sur les avis des savants de Ahl as-Sunnah wa-l-Jamā'ah.",
         inLanguage: "fr-FR",
+        dateModified: "2026-06-14",
       },
       {
         "@type": "FAQPage",
@@ -504,6 +505,58 @@ export default function HomePage() {
             <Button asChild variant="secondary">
               <Link href="/faq">Questions fréquentes</Link>
             </Button>
+          </div>
+        </section>
+
+        <Separator />
+
+        {/* ── Méthodologie et E-E-A-T ──────────────────────────── */}
+        <section className="mx-auto w-full max-w-3xl px-4 py-12 sm:py-16 space-y-6">
+          <p className="text-[13px] font-medium uppercase tracking-widest text-brand-600">
+            Méthodologie
+          </p>
+          <h2 className="text-[28px] sm:text-[32px] font-bold text-neutral-900">
+            Fondé sur les savants de référence
+          </h2>
+          <p className="text-[15px] text-neutral-700 leading-relaxed">
+            Ce calculateur s&apos;appuie exclusivement sur les avis des savants
+            de Ahl as-Sunnah wa-l-Jamāʿah. Les divergences entre écoles ou
+            entre savants sont toujours signalées explicitement — aucune
+            position n&apos;est imposée là où les savants divergent.
+          </p>
+          <div className="rounded-[14px] border border-neutral-200 bg-white p-5 space-y-3">
+            <p className="text-[12px] font-semibold uppercase tracking-widest text-neutral-400">
+              Sources de référence
+            </p>
+            <ul className="space-y-2">
+              {[
+                "Shaykh ʿAbd al-ʿAzīz ibn Bāz رحمه الله",
+                "Shaykh Muḥammad ibn Ṣāliḥ al-ʿUthaymīn رحمه الله",
+                "Al-Lajnah ad-Dāʾimah — Comité Permanent des Savants",
+                "Consensus des quatre écoles classiques (sur les points convergents)",
+              ].map((ref) => (
+                <li
+                  key={ref}
+                  className="flex gap-3 text-[14px] text-neutral-700"
+                >
+                  <span className="text-brand-600 font-bold shrink-0">·</span>
+                  <span>{ref}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <p className="text-[13px] text-neutral-400">
+              Dernière mise à jour&nbsp;: juin 2026
+            </p>
+            <div className="flex gap-3 flex-wrap">
+              <Button asChild variant="secondary">
+                <Link href="/sources">Sources complètes</Link>
+              </Button>
+              <Button asChild variant="secondary">
+                <Link href="/a-propos">À propos</Link>
+              </Button>
+            </div>
           </div>
         </section>
 

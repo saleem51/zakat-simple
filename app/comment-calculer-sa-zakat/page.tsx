@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   title: "Comment calculer sa Zakāt al-Māl — Guide complet",
   description:
     "Guide pratique pour calculer votre Zakāt annuelle : conditions, actifs concernés, dettes déductibles, taux et étapes du calcul.",
+  alternates: {
+    canonical: "/comment-calculer-sa-zakat",
+  },
+  openGraph: {
+    title: "Comment calculer sa Zakāt al-Māl — Guide complet",
+    description:
+      "Guide pas à pas pour calculer votre Zakāt : niṣāb, actifs zakātables, dettes déductibles et taux de 2,5 %.",
+    type: "article",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
+  },
 };
 
 const STEPS = [

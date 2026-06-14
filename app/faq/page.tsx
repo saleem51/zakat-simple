@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Questions fréquentes sur la Zakāt",
   description:
     "Réponses aux questions les plus fréquentes sur la Zakāt al-Māl : niṣāb, ḥawl, actifs concernés, dettes déductibles.",
+  alternates: {
+    canonical: "/faq",
+  },
+  openGraph: {
+    title: "Questions fréquentes sur la Zakāt al-Māl",
+    description:
+      "Réponses aux questions les plus fréquentes sur la Zakāt : niṣāb, ḥawl, actifs zakātables, dettes déductibles.",
+    type: "article",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
+  },
 };
 
 const FAQ = [
