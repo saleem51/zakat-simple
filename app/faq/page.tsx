@@ -89,12 +89,22 @@ export default function FaqPage() {
             ))}
           </dl>
 
-          <div className="rounded-[10px] bg-brand-50 border border-brand-200 p-4 text-[14px] text-brand-900">
-            Une question ne figure pas ici ?{" "}
-            <a href="/sources" className="font-medium underline">
-              Consultez notre page Sources
-            </a>{" "}
-            pour les références religieuses détaillées.
+          <div className="rounded-[10px] bg-brand-50 border border-brand-200 p-4 text-[14px] text-brand-900 space-y-2">
+            <p>
+              Une question ne figure pas ici ?{" "}
+              <a href="/sources" className="font-medium underline">
+                Consultez notre page Sources
+              </a>{" "}
+              pour les références religieuses détaillées.
+            </p>
+            <p>
+              Pour les questions sur les bénéficiaires de la Zakāt (famille,
+              mosquée, association, converti, endetté) :{" "}
+              <a href="/beneficiaires-zakat" className="font-medium underline">
+                voir notre guide complet sur les bénéficiaires
+              </a>
+              .
+            </p>
           </div>
         </div>
       </PageWrapper>

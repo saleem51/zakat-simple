@@ -4,6 +4,7 @@ const LINKS = [
   { href: "/a-propos", label: "À propos" },
   { href: "/sources", label: "Sources" },
   { href: "/faq", label: "FAQ" },
+  { href: "/beneficiaires-zakat", label: "Bénéficiaires" },
   { href: "/confidentialite", label: "Confidentialité" },
 ];
 

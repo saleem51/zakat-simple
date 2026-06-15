@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/calculateur", priority: 0.9, changeFrequency: "monthly" as const },
     { path: "/comment-calculer-sa-zakat", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/nisab", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/beneficiaires-zakat", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/faq", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/sources", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/a-propos", priority: 0.5, changeFrequency: "yearly" as const },

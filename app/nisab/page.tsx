@@ -616,12 +616,17 @@ export default function NisabPage() {
             <h2 className="text-[22px] font-semibold text-neutral-900">
               Pour aller plus loin
             </h2>
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
                   href: "/calculateur",
                   title: "Calculateur de Zakāt",
                   desc: "Vérifiez votre niṣāb, listez vos actifs zakātables et obtenez le montant de votre Zakāt en quelques minutes.",
+                },
+                {
+                  href: "/beneficiaires-zakat",
+                  title: "Bénéficiaires de la Zakāt",
+                  desc: "À qui donner sa Zakāt ? Les 8 catégories du Coran, les cas de la famille, des associations et des mosquées.",
                 },
                 {
                   href: "/faq",

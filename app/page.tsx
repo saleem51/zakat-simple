@@ -178,7 +178,13 @@ export default function HomePage() {
               La Zakāt n&apos;est pas un don facultatif : c&apos;est une{" "}
               <strong>obligation religieuse</strong> (fard). Son acquittement
               purifie le patrimoine (Coran, 9:103) et contribue à la solidarité
-              au sein de la communauté. Les huit catégories de bénéficiaires
+              au sein de la communauté. Les{" "}
+              <Link
+                href="/beneficiaires-zakat"
+                className="text-brand-600 underline font-medium"
+              >
+                huit catégories de bénéficiaires
+              </Link>{" "}
               sont précisément définies dans la sourate at-Tawbah (verset 60).
             </p>
 

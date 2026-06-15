@@ -18,6 +18,7 @@ export function SiteHeader() {
             {[
               { href: "/comment-calculer-sa-zakat", label: "Guide" },
               { href: "/nisab", label: "Niṣāb" },
+              { href: "/beneficiaires-zakat", label: "Bénéficiaires" },
               { href: "/faq", label: "FAQ" },
             ].map(({ href, label }) => (
               <li key={href}>

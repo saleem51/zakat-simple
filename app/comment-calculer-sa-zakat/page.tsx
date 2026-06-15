@@ -140,6 +140,24 @@ export default function CommentCalculerPage() {
               <Link href="/calculateur">Commencer le calcul</Link>
             </Button>
           </div>
+
+          <div className="rounded-[14px] border border-neutral-200 bg-white p-5 space-y-2">
+            <p className="text-[15px] font-semibold text-neutral-900">
+              Une fois le montant calculé, à qui verser sa Zakāt ?
+            </p>
+            <p className="text-[14px] text-neutral-600 leading-relaxed">
+              Les bénéficiaires légitimes de la Zakāt al-Māl sont définis par
+              le Coran (At-Tawbah : 60) en huit catégories précises. Famille,
+              mosquée, association, converti, endetté — les règles sont
+              souvent méconnues.
+            </p>
+            <Link
+              href="/beneficiaires-zakat"
+              className="inline-block text-[14px] font-medium text-brand-600 underline"
+            >
+              À qui donner sa Zakāt ? Les 8 bénéficiaires selon le Coran →
+            </Link>
+          </div>
         </div>
       </PageWrapper>
       <SiteFooter />
