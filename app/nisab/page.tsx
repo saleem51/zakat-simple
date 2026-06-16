@@ -629,9 +629,9 @@ export default function NisabPage() {
                   desc: "À qui donner sa Zakāt ? Les 8 catégories du Coran, les cas de la famille, des associations et des mosquées.",
                 },
                 {
-                  href: "/faq",
-                  title: "FAQ — Zakāt al-Māl",
-                  desc: "Réponses aux questions les plus fréquentes : ḥawl, actifs concernés, dettes déductibles, bijoux, épargne bloquée.",
+                  href: "/qui-doit-payer-la-zakat",
+                  title: "Qui doit payer la Zakāt ?",
+                  desc: "Les 5 conditions de l'obligation selon Ahl as-Sunnah : Islam, niṣāb, ḥawl, pleine propriété, et les cas pratiques.",
                 },
                 {
                   href: "/sources",
