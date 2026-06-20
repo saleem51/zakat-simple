@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description:
       "Guide pas à pas pour calculer votre Zakāt : niṣāb, actifs zakātables, dettes déductibles et taux de 2,5 %.",
     type: "article",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — www.zakatfacile.fr" }],
   },
 };
 

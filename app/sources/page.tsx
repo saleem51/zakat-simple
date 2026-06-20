@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description:
       "Références coraniques, hadiths et avis des savants de Ahl as-Sunnah qui fondent le calcul de la Zakāt al-Māl.",
     type: "article",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — www.zakatfacile.fr" }],
   },
 };
 

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       "Définition, niṣāb en or, niṣāb en argent, valeurs actuelles, divergences entre écoles — la référence francophone sur le niṣāb de la Zakāt.",
     type: "article",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — www.zakatfacile.fr" }],
   },
 };
 
@@ -74,7 +74,7 @@ export default function NisabPage() {
           "Niṣāb : définition, montant actuel (or et argent) et calcul de la Zakāt",
         description:
           "Tout savoir sur le niṣāb : définition islamique, montant en or (85 g) et en argent (595 g), valeur du jour, divergences entre savants.",
-        url: "https://zakatfacile.fr/nisab",
+        url: "https://www.zakatfacile.fr/nisab",
         inLanguage: "fr-FR",
         author: {
           "@type": "Organization",

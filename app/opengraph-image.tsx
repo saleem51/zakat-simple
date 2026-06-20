@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const dynamic = "force-static";
-export const alt = "Calculateur de Zakāt al-Māl — zakatfacile.fr";
+export const alt = "Calculateur de Zakāt al-Māl — www.zakatfacile.fr";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -142,7 +142,7 @@ export default function OgImage() {
                 letterSpacing: "0.02em",
               }}
             >
-              zakatfacile.fr
+              www.zakatfacile.fr
             </span>
           </div>
         </div>

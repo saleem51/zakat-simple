@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr",
+        alt: "Calculateur de Zakāt al-Māl — www.zakatfacile.fr",
       },
     ],
   },
@@ -80,11 +80,11 @@ export default function QuiDoitPayerLaZakatPage() {
           "Qui doit payer la Zakāt al-Māl ? Conditions et cas pratiques",
         description:
           "Les 5 conditions d'obligation de la Zakāt selon Ahl as-Sunnah wa-l-Jamāʿah et les cas pratiques : femmes, enfants, endettés, convertis, salariés.",
-        url: "https://zakatfacile.fr/qui-doit-payer-la-zakat",
+        url: "https://www.zakatfacile.fr/qui-doit-payer-la-zakat",
         inLanguage: "fr-FR",
         author: {
           "@type": "Organization",
-          name: "zakatfacile.fr",
+          name: "Calculateur de Zakāt al-Māl",
         },
         datePublished: "2026-06-16",
         dateModified: "2026-06-16",

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Présentation du calculateur de Zakāt al-Māl : objectifs, périmètre, limites et avertissements.",
     type: "website",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr" }],
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Calculateur de Zakāt al-Māl — www.zakatfacile.fr" }],
   },
 };
 

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Calculateur de Zakāt al-Māl — zakatfacile.fr",
+        alt: "Calculateur de Zakāt al-Māl — www.zakatfacile.fr",
       },
     ],
   },
@@ -76,11 +76,11 @@ export default function BeneficiairesZakatPage() {
           "Bénéficiaires de la Zakāt al-Māl : les 8 catégories selon le Coran",
         description:
           "À qui donner sa Zakāt al-Māl ? Les 8 catégories définies par le Coran (At-Tawbah : 60), les avis des savants de Ahl as-Sunnah wa-l-Jamāʿah et les réponses aux cas pratiques.",
-        url: "https://zakatfacile.fr/beneficiaires-zakat",
+        url: "https://www.zakatfacile.fr/beneficiaires-zakat",
         inLanguage: "fr-FR",
         author: {
           "@type": "Organization",
-          name: "zakatfacile.fr",
+          name: "Calculateur de Zakāt al-Māl",
         },
         datePublished: "2026-06-15",
         dateModified: "2026-06-15",
